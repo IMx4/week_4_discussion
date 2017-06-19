@@ -6,16 +6,16 @@ import java.awt.*;
 /**
  * Created by BPCT on 6/19/2017.
  */
-public class TextArea extends JPanel {
+public class TextAreas extends JPanel {
 
     private JPanel inputPanel = new JPanel(new GridLayout(2,1,5,5));
-    protected JTextField inputField;
-    protected JTextField answerField;
+    protected static JTextField inputField;
+    protected static JTextField answerField;
 
 
 
 
-    TextArea(){
+    TextAreas(){
        inputTextArea();
        outputAnswerTextArea();
        this.add(inputPanel);
@@ -41,6 +41,10 @@ public class TextArea extends JPanel {
         answerField.setBorder(new CompoundBorder(BorderFactory.createTitledBorder("Answer"), answerField.getBorder()));
         inputPanel.add(answerField);
 
+
+    }
+
+    public static void aMethod(){
 
     }
 

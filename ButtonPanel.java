@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by BPCT on 6/19/2017.
  */
+
 public class ButtonPanel extends JPanel {
 
     GuiPanel guiPanel;
@@ -29,21 +30,16 @@ public class ButtonPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 // TODO implement prime number check
 
-                TextArea te = new TextArea();
 
-                //int number = Integer.parseInt(getInput.inputField.getText());
-                int number = 13;
+                int number = Integer.parseInt(TextAreas.inputField.getText());
                 System.out.println(number);
-                PrimeNumberCheck checkNumber = new PrimeNumberCheck(number);
-                if(checkNumber.isPrime()){
-                    System.out.println("in");
 
-
-
-
+                if(PrimeNumberCheck.isPrime(number)){
+                    TextAreas.answerField.setText("Number is Prime");
+                    TextAreas.answerField.repaint();
                 } else {
-                    System.out.println("not");
-
+                    TextAreas.answerField.setText("Number is not Prime");
+                    TextAreas.answerField.repaint();
                 }
 
             }

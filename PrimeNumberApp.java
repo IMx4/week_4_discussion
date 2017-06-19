@@ -13,7 +13,7 @@ public class PrimeNumberApp extends GuiPanel{
     public static void main(String[] args) {
        GuiPanel guiPanel = new GuiPanel();
        guiPanel.add(new titleBanner());
-       guiPanel.add( new TextArea());
+       guiPanel.add( new TextAreas());
        guiPanel.add( new ButtonPanel());
 
        guiPanel.display();

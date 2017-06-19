@@ -23,10 +23,10 @@ public class PrimeNumberCheck {
         this.number = number;
     }
 
-    public boolean isPrime(){
+    public static boolean isPrime(int number){
 
         // declare local variable
-        int number = getNumber();
+        //int number = getNumber();
 
         if(number%2 == 0) {
             return false;
